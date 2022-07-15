@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery, withPrefix } from "gatsby";
 import { Nav, Navbar } from "react-bootstrap";
 import Img from "gatsby-image";
 import { FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
@@ -20,7 +20,7 @@ export default ({ active, className, children }) => (
           }
         }
 
-        bannerImage: file(relativePath: { eq: "womenbanner.jpg" }) {
+        bannerImage: file(relativePath: { eq: "demographicsbanner.png" }) {
           childImageSharp {
             fluid(maxWidth: 1100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -37,7 +37,7 @@ export default ({ active, className, children }) => (
           expand="sm"
           style={{ backgroundColor: "#fff" }}
         >
-          <Navbar.Brand href="/">
+          <Navbar.Brand href={withPrefix("/")}>
             <Img
               className="logo"
               fixed={data.logoImage.childImageSharp.fixed}
@@ -49,23 +49,29 @@ export default ({ active, className, children }) => (
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link href="/" className={active === "home" ? "active" : ""}>
+              <Nav.Link href={withPrefix("/")} className={active === "home" ? "active" : ""}>
                 Home
               </Nav.Link>
               <Nav.Link
-                href="/data"
-                className={active === "explore" ? "active" : ""}
+                href={withPrefix("/practices")}
+                className={active === "practices" ? "active" : ""}
               >
-                Explore Data{" "}
+                Good Practices{" "}
               </Nav.Link>
               <Nav.Link
-                href="/resources"
+                href={withPrefix("/data")}
+                className={active === "explore" ? "active" : ""}
+              >
+                Data on Women{" "}
+              </Nav.Link>
+              <Nav.Link
+                href={withPrefix("/resources")}
                 className={active === "resources" ? "active" : ""}
               >
                 Resources{" "}
               </Nav.Link>
               <Nav.Link
-                href="/about"
+                href={withPrefix("/about")}
                 className={active === "about" ? "active" : ""}
               >
                 {" "}

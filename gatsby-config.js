@@ -8,6 +8,7 @@ const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
+  // pathPrefix: "/women-in-philosophy",
   siteMetadata: {
     title: "Women in Philosophy",
     twitterUsername: "PhilosophyData",
