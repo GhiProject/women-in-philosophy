@@ -5,7 +5,9 @@ credentials.json
 token.json
 node_modules
 yarn-error.log
-
+.env.development
+.env.production
+.env
 # Build directory
 /public
 .DS_Store
