@@ -1,0 +1,89 @@
+.practices-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 10em;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+.practices-content {
+  padding-right: 1em;
+}
+
+.practices-nav {
+  margin-top: 3rem;
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+  position: sticky;
+  top: 6rem;
+  align-self: start;
+}
+
+.practices-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out;
+  /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.practices-nav a:hover,
+.practices-nav a:focus {
+  color: #666;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.practices-section-header:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.procedure {
+  list-style: outside;
+}
+
+.seal {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 50%;
+}
+
+.signatories th, .signatories td {
+  padding: 20px;
+}
