@@ -60,6 +60,14 @@ export default function About() {
       >
         Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
       </Member>
+      <Member
+        name="Elly Vintiadis"
+        photo={profileImage.vintiadis}
+        position="(Co-Director)"
+        className="pi"
+      >
+        Elly Vintiadis teaches philosophy at Deree - The American college of Greece. Her work is mainly in the philosophy of mind and of psychiatry but also in epistemology, animal ethics and metaphilosophy. She is editor of Philosophy by Women (Routledge, 2020), first editor of Brute Facts (Oxford University Press, 2018) and author of Animals and US (in Greek -EP Books, 2020). She also writes for a wider audience – both because she enjoys it and because she believes it is important that philosophical thinking is available and accessible to the wider public beyond academia.
+      </Member>
       <h1>Advisory Board</h1>
       <Member
         name="Sally Haslanger"
@@ -116,14 +124,6 @@ export default function About() {
         className="advisor"
       >
         Julie C. Vancamp is a Professor Emerita of Philosophy at California State University, Long Beach, where she teaches philosophy of law and applied ethics. She is currently Executive Director & Secretary-Treasurer of the American Society for Aesthetics. She was privileged to study with Elizabeth Lane Beardsley at Temple University and inspired to encourage women to pursue philosophy by a former male colleague who told her long ago that 'female philosopher is an oxymoron.'
-      </Member>
-      <Member
-        name="Ruth Chang"
-        photo={profileImage.chang}
-        position=""
-        className="advisor"
-      >
-        Ruth Chang is a Professor and the Chair of Jurisprudence at the University of Oxford, a Professorial Fellow of University College, Oxford, and an American professor of philosophy. Formerly, she worked as a Professor of Philosophy at Rutgers University, New Brunswick. Before arriving at Rutgers, she was a Junior Research Fellow at Balliol College, Oxford where she was completing her dissertation. She has also held visiting positions in the philosophy department at the University of California, Los Angeles and the University of Chicago Law School. Before her life as a philosopher, she worked as a law associate on a (pro bono) death penalty case and several (non pro bono) product liability cases. She has a J.D. from Harvard Law School and an A.B. from Dartmouth College. Some of her current academic interests include population ethics, the nature of normativity, commitment, and the self.
       </Member>
       <Member
         name="Kenneth Clatterbaugh"
