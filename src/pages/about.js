@@ -142,14 +142,6 @@ export default function About() {
         Charles W. Mills is a Distinguished Professor of Philosophy at the Graduate Center CUNY. Formerly, he taught at the University of Oklahoma, the University of Illinois at Chicago, and Northwestern University. He was also the President of the American Philosophical Association Central Division. His research interests include social and political philosophy, Africana philosophy, critical philosophy of race, and ethics. 
       </Member>
       <Member
-        name="Meena Krishnamurthy"
-        photo={profileImage.krishnamurthy}
-        position=""
-        className="advisor"
-      >
-        Meena Krishnamurthy is an Assistant Professor in the Department of Philosophy at Queen’s University. Previously she was an Assistant Professor in the Department of Philosophy and in the Program in Philosophy, Politics, and Economics at the University of Michigan. She is a political philosopher who works mostly in the area of normative democratic theory.
-      </Member>
-      <Member
         name="Amia Srinivasan"
         photo={profileImage.srinivasan}
         position=""
