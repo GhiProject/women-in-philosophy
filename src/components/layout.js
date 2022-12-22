@@ -55,8 +55,10 @@ const Layout = ({ active, className, children }) => (
                 Home
               </Nav.Link>
               <Nav.Link
-                href={withPrefix("/practices")}
                 className={active === "practices" ? "active" : ""}
+                onSelect={() => {
+                  alert("This page is coming soon!")
+                }}
               >
                 Good Practices{" "}
               </Nav.Link>
