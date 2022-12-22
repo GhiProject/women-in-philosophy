@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 
 // import { useInView } from "react-intersection-observer";
 import Layout from "../components/layout";
+import under_construction from '../images/under_construction.jpg'
 
 // https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
 
@@ -56,7 +57,7 @@ const PracticesPage = () => {
     <>
       <Layout>
         <div className="banner">
-          <img src={'../images/under_construction.jpg'} alt={"Under Construction"}/>
+          <img src={under_construction} alt={"Under Construction"}/>
         </div>
       </Layout>
     </>
