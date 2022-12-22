@@ -56,7 +56,7 @@ const PracticesPage = () => {
   return (
     <>
       <Layout>
-        <div className="min-width-banner">
+        <div className="center_align_container">
           <img src={under_construction} alt={"Under Construction"}/>
         </div>
       </Layout>

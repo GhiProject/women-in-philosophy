@@ -622,9 +622,10 @@ pre tt:after {
   margin: 20px auto;
 }
 
-.min-width-banner{
-  width: fit-content;
-  max-width: 1100px;
+.center_align_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar{
