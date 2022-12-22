@@ -10,6 +10,11 @@ import "./layout.css";
 import withAuth from "../utils/auth";
 
 
+const linkDisabledAlert = () => {
+  alert("This page is coming soon")
+}
+
+
 const Layout = ({ active, className, children }) => (
   <StaticQuery
     query={graphql`
@@ -56,9 +61,7 @@ const Layout = ({ active, className, children }) => (
               </Nav.Link>
               <Nav.Link
                 className={active === "practices" ? "active" : ""}
-                onSelect={() => {
-                  alert("This page is coming soon!")
-                }}
+                onSelect={linkDisabledAlert}
               >
                 Good Practices{" "}
               </Nav.Link>
