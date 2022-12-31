@@ -72,7 +72,7 @@ const PracticesPage = () => {
               <p>Consider whether and how to implement Good Practices recommendations. We suggest clicking through the links on the right that pertain to your organization but you can also click <a href={withPrefix("/GoodPractices.pdf")}>here</a> to go straight to a document containing all of them</p>
               <ol className="procedure">
                 <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year.
-                  Use <a href="https://docs.google.com/forms/d/e/1FAIpQLScBBOQgMKe5FhD_9lF4c6GRPgO1zx3_173_A9dmk5ddrGsNJQ/viewform?usp=sf_link" target="_blank">this link</a> to sign on.
+                  Use <a href="https://forms.gle/vAHRjwaG5XYjV12LA" target="_blank">this link</a> to sign on.
                   To facilitate planning we provide <a href={withPrefix("/ImplementationTemplate.pdf")}>this template</a> that you can use, but doing so is entirely optional . Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
                 <li>Then inform the Good Practices Secretariat when your plan is in place with a concrete timeline for implementation to move from “commitment” to “adoption” status.</li>
                 <li><p>
