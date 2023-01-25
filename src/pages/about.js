@@ -75,14 +75,6 @@ export default function About() {
       >
         Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
       </Member>
-      <Member
-        name="Lori Gruen"
-        photo={profileImage.gruen}
-        position=""
-        className="(Co-Director)"
-      >
-        Lori Gruen is William Griffin Professor of Philosophy, Professor of Feminist, Gender, and Sexuality Studies, and Professor of Science in Society at Wesleyan University where she also coordinates Wesleyan Animal Studies. She is the author and editor of over a dozen books, most recently “Animal Crisis” (co-authored with Alice Crary) and “Carceral Logics” (co-edited with Justin Marceau).  As of July 1, 2022 she will serve as Chair of the APA’s Committee on the Status of Women.
-      </Member>
       <h1>Advisory Board</h1>
       <Member
         name="Sally Haslanger"
