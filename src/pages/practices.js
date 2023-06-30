@@ -5,6 +5,15 @@ import Img from "gatsby-image";
 // import { useInView } from "react-intersection-observer";
 import Layout from "../components/layout";
 
+import HiringRetentionPromotion from "../static/HiringRetentionPromotion.pdf"
+import Teaching from "../static/Teaching.pdf"
+import HarrassmentStaffStudentRelationships from "../static/HarrassmentStaffStudentRelationships.pdf"
+import Caregivers from "../static/Caregivers.pdf"
+import Journals from "../static/Journals.pdf"
+import ConferencesEvents from "../static/ConferencesEvents.pdf"
+import LearnedSocieties from "../static/LearnedSocieties.pdf"
+import ResearchProjects from "../static/ResearchProjects.pdf"
+
 // https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
 
 
@@ -93,25 +102,25 @@ const PracticesPage = () => {
             <h2>Good Practices Documents</h2>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, departments: !open.departments })}>Departments</h3>
             <ul className={open.departments ? '' : 'hidden'}>
-              <li><a href={withPrefix("..../static/HiringRetentionPromotion.pdf")} rel="noopener noreferrer" target="_blank">Hiring, Retention, and Promotion</a></li>
-              <li><a href={withPrefix("../static/Teaching.pdf")} rel="noopener noreferrer" target="_blank">Teaching</a></li>
-              <li><a href={withPrefix("../static/HarrassmentStaffStudentRelationships.pdf")} rel="noopener noreferrer" target="_blank">Harrassment and Staff-Student Relationships</a></li>
-              <li><a href={withPrefix("../static/Caregivers.pdf")} rel="noopener noreferrer" target="_blank">Caregivers</a></li>
+              <li><a href={HiringRetentionPromotion} rel="noreferrer" target="_blank">Hiring, Retention, and Promotion</a></li>
+              <li><a href={Teaching} rel="noreferrer" target="_blank">Teaching</a></li>
+              <li><a href={HarrassmentStaffStudentRelationships} rel="noreferrer" target="_blank">Harrassment and Staff-Student Relationships</a></li>
+              <li><a href={Caregivers} rel="noreferrer" target="_blank">Caregivers</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>Journals</h3>
             <ul className={open.journals ? '' : 'hidden'}>
-              <li><a href={withPrefix("../static/Journals.pdf")} rel="noopener noreferrer" target="_blank">Journals</a></li>
+              <li><a href={Journals} rel="noreferrer" target="_blank">Journals</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, societies: !open.societies })}>Learned Societies</h3>
             <ul className={open.societies ? '' : 'hidden'}>
-              <li><a href={withPrefix("../static/ConferencesEvents.pdf")} rel="noopener noreferrer" target="_blank">Conferences and Events</a></li>
-              <li><a href={withPrefix("../static/LearnedSocieties.pdf")} rel="noopener noreferrer" target="_blank">Learned Societies</a></li>
+              <li><a href={ConferencesEvents} rel="noreferrer" target="_blank">Conferences and Events</a></li>
+              <li><a href={LearnedSocieties} rel="noreferrer" target="_blank">Learned Societies</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, groups: !open.groups })}>Research Groups</h3>
             <ul className={open.groups ? '' : 'hidden'}>
-              <li><a href={withPrefix("../static/ResearchProjects.pdf")} rel="noopener noreferrer" target="_blank">Research Projects</a></li>
-              <li><a href={withPrefix("../static/HiringRetentionPromotion.pdf")} rel="noopener noreferrer" target="_blank">Hiring, Retention, and Promotion</a></li>
-              <li><a href={withPrefix("../static/Caregivers.pdf")} rel="noopener noreferrer" target="_blank">Caregivers</a></li>
+              <li><a href={ResearchProjects} rel="noreferrer" target="_blank">Research Projects</a></li>
+              <li><a href={HiringRetentionPromotion} rel="noreferrer" target="_blank">Hiring, Retention, and Promotion</a></li>
+              <li><a href={Caregivers} rel="noreferrer" target="_blank">Caregivers</a></li>
             </ul>
           </div>
         </div>
