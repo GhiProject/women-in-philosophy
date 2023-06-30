@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 // import { useInView } from "react-intersection-observer";
 import Layout from "../components/layout";
 
+import GoodPractices from "../static/GoodPractices.pdf"
 import HiringRetentionPromotion from "../static/HiringRetentionPromotion.pdf"
 import Teaching from "../static/Teaching.pdf"
 import HarrassmentStaffStudentRelationships from "../static/HarrassmentStaffStudentRelationships.pdf"
@@ -78,7 +79,7 @@ const PracticesPage = () => {
             <div className={showProcedure ? '' : 'hidden'}>
               <h2>How the Good Practices Scheme Works</h2>
 
-              <p>Consider whether and how to implement Good Practices recommendations. We suggest clicking through the links on the right that pertain to your organization but you can also click <a href={withPrefix("/GoodPractices.pdf")}>here</a> to go straight to a document containing all of them</p>
+              <p>Consider whether and how to implement Good Practices recommendations. We suggest clicking through the links on the right that pertain to your organization but you can also click <a href={GoodPractices}>here</a> to go straight to a document containing all of them</p>
               <ol className="procedure">
                 <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year.
                   Use <a href="https://forms.gle/vAHRjwaG5XYjV12LA" target="_blank">this link</a> to sign on.
