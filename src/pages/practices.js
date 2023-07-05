@@ -14,6 +14,7 @@ import Journals from "../static/Journals.pdf"
 import ConferencesEvents from "../static/ConferencesEvents.pdf"
 import LearnedSocieties from "../static/LearnedSocieties.pdf"
 import ResearchProjects from "../static/ResearchProjects.pdf"
+import ImplementationTemplate from "../static/ImplementationTemplate.pdf"
 
 // https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
 
@@ -83,7 +84,7 @@ const PracticesPage = () => {
               <ol className="procedure">
                 <li>If you choose to implement the recommendations, inform the Good Practices Secretariat that you will establish a plan to implement the recommendations within a year.
                   Use <a href="https://forms.gle/vAHRjwaG5XYjV12LA" target="_blank">this link</a> to sign on.
-                  To facilitate planning we provide <a href={withPrefix("/ImplementationTemplate.pdf")}>this template</a> that you can use, but doing so is entirely optional . Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
+                  To facilitate planning we provide <a href={ImplementationTemplate} rel="noreferrer" target="_blank">this template</a> that you can use, but doing so is entirely optional . Note that for departments, journals, and learned societies, there are different sets of recommendations that are applicable.</li>
                 <li>Then inform the Good Practices Secretariat when your plan is in place with a concrete timeline for implementation to move from “commitment” to “adoption” status.</li>
                 <li><p>
                   We also encourage you to advertise your commitment and use our GPS logo and we will link back to websites which display your commitment to these Good Practices.</p>
