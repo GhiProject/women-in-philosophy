@@ -106,7 +106,7 @@ const PracticesPage = () => {
             <ul className={open.departments ? '' : 'hidden'}>
               <li><a href={HiringRetentionPromotion} rel="noreferrer" target="_blank">Hiring, Retention, and Promotion</a></li>
               <li><a href={Teaching} rel="noreferrer" target="_blank">Teaching</a></li>
-              <li><a href={HarrassmentStaffStudentRelationships} rel="noreferrer" target="_blank">Harrassment and Staff-Student Relationships</a></li>
+              <li><a href={HarrassmentStaffStudentRelationships} rel="noreferrer" target="_blank">Harassment and Staff-Student Relationships</a></li>
               <li><a href={Caregivers} rel="noreferrer" target="_blank">Caregivers</a></li>
             </ul>
             <h3 className="practices-section-header" onClick={() => setOpen({ ...open, journals: !open.journals })}>Journals</h3>
