@@ -52,14 +52,6 @@ export default function About() {
         Eric Schwitzgebel is a Professor of Philosophy at the University of California, Riverside. Recent works include: A Theory of Jerks, and Other Philosophical Misadventures (MIT Press, 2019), Perplexities of Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine, 2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the APA Committee on the Status and Future of the Profession. On his blog, and more recently in op-eds for The Los Angeles Times, he regularly critiques the narrowness and homogeneity of academic philosophy in the mainstream Anglophone tradition.
       </Member>
       <Member
-        name="Sherri Conklin "
-        photo={profileImage.conklin}
-        position="(Co-Director)"
-        className="pi"
-      >
-        Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
-      </Member>
-      <Member
         name="Elly Vintiadis"
         photo={profileImage.vintiadis}
         position="(Co-Director)"
@@ -76,6 +68,14 @@ export default function About() {
         Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
       </Member>
       <h1>Advisory Board</h1>
+        <Member
+            name="Sherri Conklin "
+            photo={profileImage.conklin}
+            position=""
+            className="advisor"
+        >
+            Sherri Conklin recently earned her PhD in Philosophy at UCSB, and is Currently a lecturer for the Department of Philosophy at University of Colorado Boulder. Sherri conducts research in marginalization in Philosophy professions, moral worth, normative theory, and moral psychology.
+        </Member>
       <Member
         name="Sally Haslanger"
         photo={profileImage.haslanger}
