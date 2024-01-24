@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import Member from "../components/member";
+import Signatory from "../components/signatory";
 
 const profileImage = {};
 
@@ -38,6 +39,16 @@ export default function About() {
     data.photos.edges.forEach((f) => {
         profileImage[f.node.name] = f.node.childImageSharp.fixed;
     });
+
+    const profiles = data.allProfile.edges.map(profile => profile.node);
+    const directorProfiles = profiles.filter(s => s.entity === "Directors").map(Signatory)
+    const abProfiles = profiles.filter(s => s.entity === "Advisory Board").map(Signatory)
+    const sabProfiles = profiles.filter(s => s.entity === "Scientific Advisory Board").map(Signatory)
+    const collaboratorProfiles = profiles.filter(s => s.entity === "Collaborators").map(Signatory)
+
+    directorProfiles.forEach(director => {
+        console.log(director.toString())
+    })
 
     return (
         <Layout>
