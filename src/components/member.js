@@ -8,7 +8,7 @@ export default function Member({ entity, image, name, position, bio }) {
   return (
     <div className="member">
       <div className={`box ${entity}`}>
-        <img src={image} className="photo" alt={name}/>
+        <img src={image} className="photo" alt={name} referrerPolicy="no-referrer"/>
         {/*<Img className="photo" fixed={image} />*/}
         <h3>
           {name} <br />
