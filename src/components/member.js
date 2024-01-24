@@ -7,7 +7,8 @@ export default function Member({ entity, image, name, position, bio }) {
   return (
     <div className="member">
       <div className={`box ${entity}`}>
-        <Img className="photo" fixed={image} />
+        <img src={image} className="photo" alt={name}/>
+        {/*<Img className="photo" fixed={image} />*/}
         <h3>
           {name} <br />
           {'(' + position + ')'}
