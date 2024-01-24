@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import "./member.css";
 
 export default function Member({ entity, image, name, position, bio }) {
+
   return (
     <div className="member">
       <div className={`box ${entity}`}>

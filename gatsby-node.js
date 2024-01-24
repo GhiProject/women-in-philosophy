@@ -16,6 +16,7 @@ const ADD_PROFILE_SPREADSHEET_ID = process.env.ADD_PROFILE_SPREADSHEET_ID
 const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
 const range = 'A:F'
+const GOOGLE_DRIVE_IMAGE_URL = 'https://drive.google.com/uc?export=view&id='
 
 
 exports.sourceNodes = async ({
@@ -89,7 +90,9 @@ exports.sourceNodes = async ({
                 throw Error("unknown entity type: " + row[1])
         }
 
-        obj.image = row[2]
+        let image_id = row[2].split('id=')[1]
+
+        obj.image = GOOGLE_DRIVE_IMAGE_URL + image_id
 
         obj.name = row[3] ?? ''
 
