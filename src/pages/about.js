@@ -41,14 +41,10 @@ export default function About() {
     });
 
     const profiles = data.allProfile.edges.map(profile => profile.node);
-    const directorProfiles = profiles.filter(s => s.entity === "Directors").map(Signatory)
-    const abProfiles = profiles.filter(s => s.entity === "Advisory Board").map(Signatory)
-    const sabProfiles = profiles.filter(s => s.entity === "Scientific Advisory Board").map(Signatory)
-    const collaboratorProfiles = profiles.filter(s => s.entity === "Collaborators").map(Signatory)
-
-    directorProfiles.forEach(director => {
-        console.log(Object.keys(director).toString())
-    })
+    const directorProfiles = profiles.filter(s => s.entity === "pi").map(Member)
+    const advisorProfiles = profiles.filter(s => s.entity === "advisor").map(Member)
+    const scientificProfiles = profiles.filter(s => s.entity === "scientific").map(Member)
+    const staffProfiles = profiles.filter(s => s.entity === "staff").map(Member)
 
     return (
         <Layout>
@@ -57,38 +53,7 @@ export default function About() {
             <br />
             <br />
             <h1>Directors</h1>
-            <Member
-                name="Nicole Hassoun"
-                photo={profileImage.Hassoun}
-                position="(Executive Director)"
-                className="pi"
-            >
-                Nicole Hassoun is a professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
-            </Member>
-            <Member
-                name="Eric Schwitzgebel"
-                photo={profileImage.schwitzgebel}
-                position="(Co-Director)"
-                className="pi"
-            >
-                Eric Schwitzgebel is a Professor of Philosophy at the University of California, Riverside. Recent works include: A Theory of Jerks, and Other Philosophical Misadventures (MIT Press, 2019), Perplexities of Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine, 2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the APA Committee on the Status and Future of the Profession. On his blog, and more recently in op-eds for The Los Angeles Times, he regularly critiques the narrowness and homogeneity of academic philosophy in the mainstream Anglophone tradition.
-            </Member>
-            <Member
-                name="Elly Vintiadis"
-                photo={profileImage.vintiadis}
-                position="(Co-Director)"
-                className="pi"
-            >
-                Elly Vintiadis teaches philosophy at Deree - The American college of Greece. Her work is mainly in the philosophy of mind and of psychiatry but also in epistemology, animal ethics and metaphilosophy. She is editor of Philosophy by Women (Routledge, 2020), first editor of Brute Facts (Oxford University Press, 2018) and author of Animals and US (in Greek -EP Books, 2020). She also writes for a wider audience – both because she enjoys it and because she believes it is important that philosophical thinking is available and accessible to the wider public beyond academia.
-            </Member>
-            <Member
-                name="Björn Freter"
-                photo={profileImage.freter}
-                position="(Co-Director)"
-                className="pi"
-            >
-                Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
-            </Member>
+            {directorProfiles}
             <h1>Advisory Board</h1>
             <Member
                 name="Sherri Conklin "

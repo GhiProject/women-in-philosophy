@@ -72,7 +72,22 @@ exports.sourceNodes = async ({
 
         const obj = {}
 
-        obj.entity = row[1]
+        switch (row[1]) {
+            case "Directors":
+                obj.entity = "pi"
+                break;
+            case "Advisory Board":
+                obj.entity = "advisor"
+                break;
+            case "Scientific Advisory Board":
+                obj.entity = "scientific"
+                break;
+            case "Collaborators":
+                obj.entity = "staff"
+                break;
+            default:
+                throw Error("unknown entity type: " + row[1])
+        }
 
         obj.image = row[2]
 

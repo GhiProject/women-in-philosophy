@@ -3,18 +3,18 @@ import Img from "gatsby-image";
 
 import "./member.css";
 
-export default function Member({ className, photo, name, position, children }) {
+export default function Member({ entity, image, name, position, bio }) {
   return (
     <div className="member">
-      <div className={`box ${className}`}>
-        <Img className="photo" fixed={photo} />
+      <div className={`box ${entity}`}>
+        <Img className="photo" fixed={image} />
         <h3>
           {name} <br />
-          {position}
+          {'(' + position + ')'}
         </h3>
 
         <div className="about">
-          <p>{children}</p>
+          <p>{bio}</p>
         </div>
       </div>
     </div>
