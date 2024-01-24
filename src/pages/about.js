@@ -8,6 +8,17 @@ const profileImage = {};
 export default function About() {
     const data = useStaticQuery(graphql`
     {
+      allProfile {
+        edges {
+          node {
+            entity
+            image
+            name
+            position
+            bio
+          }
+        }
+      }
       photos: allFile(filter: { relativeDirectory: { eq: "members" } }) {
         edges {
           node {

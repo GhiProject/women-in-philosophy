@@ -11,7 +11,8 @@ require("dotenv").config({
 
 const { google } = require('googleapis')
 const API_KEY = process.env.GOOGLE_API_KEY
-const SPREADSHEET_ID = process.env.SPREADSHEET_ID
+const GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID = process.env.GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID
+const ADD_PROFILE_SPREADSHEET_ID = process.env.ADD_PROFILE_SPREADSHEET_ID
 const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
 const range = 'A:F'
@@ -22,14 +23,19 @@ exports.sourceNodes = async ({
     createContentDigest,
     createNodeId
 }) => {
-    const response = await sheets.spreadsheets.values.get({ spreadsheetId: SPREADSHEET_ID, range })
-    const values = response.data.values
-    if (values.length <= 1) throw Error('no content in spreadsheet')
-    values.shift() // remove header row
+    const goodPracticesSignupResponse = await sheets.spreadsheets.values.get({ spreadsheetId: GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID, range })
+    const goodPracticesSignupValues = goodPracticesSignupResponse.data.values
+    if (goodPracticesSignupValues.length <= 1) throw Error('no content in spreadsheet')
+    goodPracticesSignupValues.shift() // remove header row
+
+    const addProfileResponse = await sheets.spreadsheets.values.get({ spreadsheetId: ADD_PROFILE_SPREADSHEET_ID, range })
+    const addProfileValues = addProfileResponse.data.values
+    if (addProfileValues.length <= 1) throw Error('no content in spreadsheet')
+    addProfileValues.shift() // remove header row
 
     const objs = []
 
-    values.forEach(row => {
+    goodPracticesSignupValues.forEach(row => {
 
         const obj = {}
 
@@ -57,6 +63,27 @@ exports.sourceNodes = async ({
 
         obj.exceptions = row[5] ?? ''
 
+        obj.type = 'Signatory'
+
+        objs.push(obj)
+    })
+
+    addProfileValues.forEach(row => {
+
+        const obj = {}
+
+        obj.entity = row[1]
+
+        obj.image = row[2]
+
+        obj.name = row[3] ?? ''
+
+        obj.position = row[4] ?? ''
+
+        obj.bio = row[5] ?? ''
+
+        obj.type = 'Profile'
+
         objs.push(obj)
     })
 
@@ -65,7 +92,7 @@ exports.sourceNodes = async ({
         parent: null,
         children: [],
         internal: {
-            type: `Signatory`,
+            type: obj.type,
             contentDigest: createContentDigest(obj),
         },
         ...obj
