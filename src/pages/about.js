@@ -47,7 +47,7 @@ export default function About() {
     const collaboratorProfiles = profiles.filter(s => s.entity === "Collaborators").map(Signatory)
 
     directorProfiles.forEach(director => {
-        console.log(director.toString())
+        console.log(Object.keys(director).toString())
     })
 
     return (
