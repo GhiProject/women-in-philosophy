@@ -13,12 +13,10 @@ const { google } = require('googleapis')
 const API_KEY = process.env.GOOGLE_API_KEY
 const GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID = process.env.GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID
 const ADD_PROFILE_SPREADSHEET_ID = process.env.ADD_PROFILE_SPREADSHEET_ID
-const opts = { version: 'v4', auth: API_KEY }
-const sheets = google.sheets(opts)
-const drive = google.drive({
-    version: 'v3',
-    auth: API_KEY
-});
+const sheetsOpts = { version: 'v4', auth: API_KEY }
+const driveOpts = { version: 'v3', auth: API_KEY }
+const sheets = google.sheets(sheetsOpts)
+const drive = google.drive(driveOpts);
 const range = 'A:F'
 const GOOGLE_DRIVE_IMAGE_URL = 'https://drive.google.com/uc?export=view&id='
 
