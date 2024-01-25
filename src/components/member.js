@@ -12,7 +12,7 @@ export default function Member({ entity, image, name, position, bio }) {
         {/*<Img className="photo" fixed={image} />*/}
         <h3>
           {name} <br />
-          {'(' + position + ')'}
+          {position === '' ? position : '(' + position + ')'}
         </h3>
 
         <div className="about">
