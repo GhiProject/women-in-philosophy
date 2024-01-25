@@ -15,6 +15,10 @@ const GOOD_PRACTICES_SIGNUP_SPREADSHEET_ID = process.env.GOOD_PRACTICES_SIGNUP_S
 const ADD_PROFILE_SPREADSHEET_ID = process.env.ADD_PROFILE_SPREADSHEET_ID
 const opts = { version: 'v4', auth: API_KEY }
 const sheets = google.sheets(opts)
+const drive = google.drive({
+    version: 'v3',
+    auth: API_KEY
+});
 const range = 'A:F'
 const GOOGLE_DRIVE_IMAGE_URL = 'https://drive.google.com/uc?export=view&id='
 
@@ -91,6 +95,17 @@ exports.sourceNodes = async ({
         }
 
         let image_id = row[2].split('id=')[1]
+
+        drive.files.get({
+            fileId: image_id,
+            fields: 'webContentLink'
+        }).then(function(success){
+            let webContentLink = success.result.webContentLink;
+            console.log(row[3] + ' : ' + webContentLink)
+        }, function(fail){
+            console.log(fail);
+            console.log('Error '+ fail.result.error.message);
+        })
 
         obj.image = GOOGLE_DRIVE_IMAGE_URL + image_id
 
