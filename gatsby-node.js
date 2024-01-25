@@ -97,9 +97,9 @@ exports.sourceNodes = async ({
 
         let imageResponse = await drive.files.get({
             fileId: image_id,
-            fields: 'webContentLink'
+            fields: 'webViewLink'
         })
-        obj.image = imageResponse.data.webContentLink
+        obj.image = imageResponse.data.webViewLink
 
         obj.name = row[3] ?? ''
 
