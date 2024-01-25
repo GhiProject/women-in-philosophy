@@ -102,6 +102,7 @@ exports.sourceNodes = async ({
         }, function(fail){
             console.log(fail);
             console.log('Error '+ fail.result.error.message);
+            obj.image = '#'
         })
 
         obj.name = row[3] ?? ''
