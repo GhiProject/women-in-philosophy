@@ -71,8 +71,7 @@ exports.sourceNodes = async ({
         objs.push(obj)
     })
 
-    addProfileValues.forEach(row => {
-
+    for (const row of addProfileValues) {
         const obj = {}
 
         switch (row[1]) {
@@ -96,36 +95,68 @@ exports.sourceNodes = async ({
 
         let image_id = row[2].split('id=')[1]
 
-        drive.files.get({
+        let imageResponse = await drive.files.get({
             fileId: image_id,
             fields: 'webContentLink'
-        }).then(function(success){
-            obj.image = success.data.webContentLink
-
-            obj.name = row[3] ?? ''
-
-            obj.position = row[4] ?? ''
-
-            obj.bio = row[5] ?? ''
-
-            obj.type = 'Profile'
-
-            objs.push(obj)
-        }, function(fail){
-            console.log(fail);
-            console.log('Error '+ fail.result.error.message);
-
-            obj.name = row[3] ?? ''
-
-            obj.position = row[4] ?? ''
-
-            obj.bio = row[5] ?? ''
-
-            obj.type = 'Profile'
-
-            objs.push(obj)
         })
-    })
+        obj.image = imageResponse.data.webContentLink
+
+        obj.name = row[3] ?? ''
+
+        obj.position = row[4] ?? ''
+
+        obj.bio = row[5] ?? ''
+
+        obj.type = 'Profile'
+
+        objs.push(obj)
+    }
+
+    // addProfileValues.forEach(row => {
+    //
+    //     const obj = {}
+    //
+    //     switch (row[1]) {
+    //         case "Directors":
+    //             obj.entity = "pi"
+    //             break;
+    //         case "Advisory Board":
+    //             obj.entity = "advisor"
+    //             break;
+    //         case "Scientific Advisory Board":
+    //             obj.entity = "scientific"
+    //             break;
+    //         case "Collaborators":
+    //             obj.entity = "staff"
+    //             break;
+    //         default:
+    //             throw Error("unknown entity type: " + row[1])
+    //     }
+    //
+    //     obj.image = '#'
+    //
+    //     let image_id = row[2].split('id=')[1]
+    //
+    //     drive.files.get({
+    //         fileId: image_id,
+    //         fields: 'webContentLink'
+    //     }).then(function(success){
+    //         obj.image = success.data.webContentLink
+    //     }, function(fail){
+    //         console.log(fail);
+    //         console.log('Error '+ fail.result.error.message);
+    //     })
+    //
+    //     obj.name = row[3] ?? ''
+    //
+    //     obj.position = row[4] ?? ''
+    //
+    //     obj.bio = row[5] ?? ''
+    //
+    //     obj.type = 'Profile'
+    //
+    //     objs.push(obj)
+    // })
 
     const nodes = objs.map((obj, i) => ({
         id: createNodeId(i),
