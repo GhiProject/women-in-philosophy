@@ -98,14 +98,11 @@ exports.sourceNodes = async ({
             fileId: image_id,
             fields: 'webContentLink'
         }).then(function(success){
-            let webContentLink = success.data.webContentLink;
-            console.log(row[3] + ' : ' + webContentLink)
+            obj.image = success.data.webContentLink
         }, function(fail){
             console.log(fail);
             console.log('Error '+ fail.result.error.message);
         })
-
-        obj.image = GOOGLE_DRIVE_IMAGE_URL + image_id
 
         obj.name = row[3] ?? ''
 
