@@ -101,20 +101,30 @@ exports.sourceNodes = async ({
             fields: 'webContentLink'
         }).then(function(success){
             obj.image = success.data.webContentLink
+
+            obj.name = row[3] ?? ''
+
+            obj.position = row[4] ?? ''
+
+            obj.bio = row[5] ?? ''
+
+            obj.type = 'Profile'
+
+            objs.push(obj)
         }, function(fail){
             console.log(fail);
             console.log('Error '+ fail.result.error.message);
+
+            obj.name = row[3] ?? ''
+
+            obj.position = row[4] ?? ''
+
+            obj.bio = row[5] ?? ''
+
+            obj.type = 'Profile'
+
+            objs.push(obj)
         })
-
-        obj.name = row[3] ?? ''
-
-        obj.position = row[4] ?? ''
-
-        obj.bio = row[5] ?? ''
-
-        obj.type = 'Profile'
-
-        objs.push(obj)
     })
 
     const nodes = objs.map((obj, i) => ({
