@@ -98,7 +98,7 @@ exports.sourceNodes = async ({
             fileId: image_id,
             fields: 'webContentLink'
         }).then(function(success){
-            let webContentLink = success.result.webContentLink;
+            let webContentLink = success.data.webContentLink;
             console.log(row[3] + ' : ' + webContentLink)
         }, function(fail){
             console.log(fail);
