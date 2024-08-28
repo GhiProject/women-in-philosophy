@@ -53,7 +53,8 @@
 .member .about{
     font-size: small;
     color: #000;
-    text-align: left;
+    /* text-align: left; */
+    text-align: justify;
 }
 
 
