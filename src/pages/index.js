@@ -29,6 +29,10 @@ const IndexPage = () => (
     render={(data) => (
       <>
         <Layout>
+        <strong>Contact us at:</strong>{" "}
+      <a href="mailto:demphilproj@gmail.com">demphilproj@gmail.com</a>
+      <br />
+      <br />
           <div className="banner">
             {" "}
             <Img fluid={data.bannerImage.childImageSharp.fluid} />{" "}

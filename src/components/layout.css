@@ -671,9 +671,9 @@ pre tt:after {
   cursor: pointer;
 }
 
-.ghi-footer{
+/* .ghi-footer{
   font-size: small;
-}
+} */
 .footer{
   background-color: rgba(0,0,0,0.8);
 }

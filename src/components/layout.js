@@ -64,7 +64,7 @@ const Layout = ({ active, className, children }) => (
                 href={withPrefix("/data")}
                 className={active === "explore" ? "active" : ""}
               >
-                Data on Women{" "}
+                Data on Demographics{" "}
               </Nav.Link>
               <Nav.Link
                 href={withPrefix("/resources")}
@@ -97,17 +97,17 @@ const Layout = ({ active, className, children }) => (
               <FaTwitterSquare color="#ffffff" size={25} />{" "}
             </Nav.Link>
           </Nav>
-          <Navbar.Collapse
+          {/* <Navbar.Collapse>
             id="basic-navbar-nav"
-            className="justify-content-end"
-          >
-            <Navbar.Brand
+            className="justify-content-end" */}
+          
+            {/* <Navbar.Brand
               href="https://www.global-health-impact.org/"
               className="ghi-footer"
             >
               Affiliate of Global Health Impact
-            </Navbar.Brand>
-          </Navbar.Collapse>
+            </Navbar.Brand> */}
+          {/* </Navbar.Collapse> */}
         </Navbar>
       </>
     )}

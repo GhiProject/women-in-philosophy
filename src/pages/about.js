@@ -30,16 +30,16 @@ export default function About() {
 
   return (
     <Layout>
-      <strong>Contact us at:</strong>{" "}
+      {/* <strong>Contact us at:</strong>{" "}
       <a href="mailto:demphilproj@gmail.com">demphilproj@gmail.com</a>
       <br />
-      <br />
+      <br /> */}
       <h1>Directors</h1>
 
       <Member
         name="Elly Vintiadis"
         photo={profileImage.vintiadis}
-        position="(Co-Director)"
+        // position="(Co-Director)"
         className="pi"
       >
         Elly Vintiadis teaches philosophy at Deree - The American college of Greece. Her work is mainly in the philosophy of mind and of psychiatry but also in epistemology, animal ethics and metaphilosophy. She is editor of Philosophy by Women (Routledge, 2020), first editor of Brute Facts (Oxford University Press, 2018) and author of Animals and US (in Greek -EP Books, 2020). She also writes for a wider audience – both because she enjoys it and because she believes it is important that philosophical thinking is available and accessible to the wider public beyond academia.
@@ -47,7 +47,7 @@ export default function About() {
       <Member
         name="Eric Schwitzgebel"
         photo={profileImage.schwitzgebel}
-        position="(Co-Director)"
+        // position="(Co-Director)"
         className="pi"
       >
         Eric Schwitzgebel is a Professor of Philosophy at the University of California, Riverside. Recent works include: A Theory of Jerks, and Other Philosophical Misadventures (MIT Press, 2019), Perplexities of Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine, 2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the APA Committee on the Status and Future of the Profession. On his blog, and more recently in op-eds for The Los Angeles Times, he regularly critiques the narrowness and homogeneity of academic philosophy in the mainstream Anglophone tradition.
@@ -55,21 +55,29 @@ export default function About() {
       <Member
         name="Björn Freter"
         photo={profileImage.freter}
-        position="(Co-Director)"
+        // position="(Co-Director)"
         className="pi"
       >
         Björn lives in Knoxville, TN, USA and works as Lecturer for World Philosophy at the School of Oriental and African Studies (SOAS) at the University of London, UK. He has published on a variety of topics, including pre-Socratic philosophy, baroque and classical German literature as well as African Philosophy, Matters of Decolonization, White Supremacy, Misogyny and Veganism. His current main research project aims at the Desuperiorization of Philosophy, ie. developing a radically anti-oppressive moral philosophy, and at the Foundation of Superaltern Studies, a research area investigating the western superiorist traditions and its self-representation as global moral authority.
       </Member>
-      <Member
+      {/* <Member
         name="Nicole Hassoun"
         photo={profileImage.Hassoun}
         position="(Executive Director)"
         className="pi"
       >
         Nicole Hassoun is a professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
-      </Member>
+      </Member> */}
      
       <h1>Advisory Board</h1>
+      <Member
+        name="Nicole Hassoun"
+        photo={profileImage.Hassoun}
+        position="(Founding Director)"
+        className="pi"
+      >
+        Nicole Hassoun is a professor in philosophy at Binghamton University. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations (Cambridge University Press, 2012) was runner up for the APA book prize and her articles appear in journals like the American Philosophical Quarterly, Journal of Development Economics, The Australasian Journal of Philosophy, PLOS ONE, The European Journal of Philosophy, and Utilitas.
+      </Member>
         <Member
             name="Sherri Conklin "
             photo={profileImage.conklin}
@@ -93,6 +101,22 @@ export default function About() {
         className="advisor"
       >
         Tom Dougherty is an associate Professor in philosophy at the University of North Carolina at Chapel Hill. Formerly, he worked as a University Lecturer in the Philosophy Faculty at the University of Cambridge and a Fellow of Trinity Hall. His research focuses on moral and political philosophy, as well as consequentialism, and he is currently writing books on the ethics of consent.
+      </Member>
+      <Member
+        name="Helen Beebee"
+        photo={profileImage.Beebee}
+        position=""
+        className="advisor"
+      >
+        Helen Beebee is a Professor of Philosophy of Science at the University of Leeds, UK. She works mostly in analytic metaphysics but has fingers in other pies; her books include Hume on Causation (Routledge 2006) and, with Michael Rush, Philosophy: Why it Matters (Polity 2019) — a very short introduction to philosophy for a general audience. With Jenny Saul, she set up and manages the British Philosophical Association/Society for Women in Philosophy (UK) Good Practice Scheme and co-authored two reports on the underrepresentation of women in UK philosophy. She was elected as a Fellow of the British Academy in 2023.
+      </Member>
+      <Member
+        name="Jennifer Saul"
+        photo={profileImage.Saul}
+        position=""
+        className="advisor"
+      >
+        Jennifer Saul is Waterloo Chair in Social and Political Philosophy of Language at the University of Waterloo and Honorary Professor at the University of Sheffield, where she taught 1995-2019.  Her most recent book is Dogwhistles and Figleaves: How Manipulative Language Spreads Racism and Falsehood (OUP 2024).  She served as Director of the Society for Women in Philosophy 2009-2019, and she is currently Vice President of the Canadian Society for Women in Philosophy. Together with Helen Beebee she has published the first two reports on the state of women in philosophy in the UK (in 2011 and 2021); and founded the BPA/SWIP Good Practice Scheme.  She also founded the blogs Feminist Philosophers and What is it Like to be a Woman in Philosophy.  She publishes regularly on racism, sexism, philosophy of language, deception, and underrepresentation issues in academia. In 2011 she was named the APA's Distinguished Woman Philosopher.
       </Member>
       <Member
         name="Kathryn Norlock"
@@ -142,14 +166,14 @@ export default function About() {
       >
         Kenneth C. Clatterbaugh is an American philosopher. He was Chair of the department of Philosophy at the University of Washington for fifteen years. He retired in 2012. His interests are modern philosophy, social philosophy, and gender studies.
       </Member>
-      <Member
+      {/* <Member
         name="In Memoriam Charles Mills"
         photo={profileImage.mills}
         position=""
         className="advisor"
       >
         Charles W. Mills was a Distinguished Professor of Philosophy at the Graduate Center CUNY. Formerly, he taught at the University of Oklahoma, the University of Illinois at Chicago, and Northwestern University. He was also the President of the American Philosophical Association Central Division. His research also explored social and political philosophy, Africana philosophy, critical philosophy of race, and ethics. He is remembered with adoration and respect by his colleagues and community.
-      </Member>
+      </Member> */}
       <Member
         name="Amia Srinivasan"
         photo={profileImage.srinivasan}
