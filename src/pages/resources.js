@@ -17,7 +17,7 @@ const IndexPage = () => (
       <li><a href="https://politicalphilosopher.net/2017/02/03/featured-philosopher-kyle-whyte/" target="_blank">Featured Indigenous
         Philosopher: Kyle Whyte</a></li>
       <li><a href="https://doi.org/10.18061/dsq.v33i4.3877" target="_blank">Introducing Feminist Philosophy of Disability</a></li>
-      <li><a href="https://www.mapforthegap.org.uk/mission" target="_blank">Our Mission — Minorities and Philosophy UK</a></li>
+      <li><a href="https://www.apaonline.org/page/black_experience_apastudies" target="_blank">APA Studies on Philosophy and the Black Experience</a></li>
       <li><a href="https://doi.org/10.1007/s11245-016-9402-3" target="_blank">Sick and Tired: Depression in the Margins of Academic
         Philosophy | SpringerLink</a></li>
       <li><a href="https://doi.org/10.5325/critphilrace.2.2.0224" target="_blank">“What is the State of Blacks in Philosophy?”</a></li>
@@ -33,8 +33,8 @@ const IndexPage = () => (
       <li><a href="https://www.apaonline.org/page/diversity_resources" target="_blank">APA Resources on Diversity and Inclusiveness.</a>
       </li>
       <li><a href="http://bpa.ac.uk/resources/women-in-philosophy/good-practice" target="_blank">BPA/SWIP Best Practices</a></li>
-      <li><a href="https://www.apaonline.org/page/asian_newsletter" target="_blank">APA Newsletter on Asian and Asian American
-        Philosophers and Philosophies</a></li>
+      {/* <li><a href="https://www.apaonline.org/page/asian_newsletter" target="_blank">APA Newsletter on Asian and Asian American
+        Philosophers and Philosophies</a></li> */}
       <li><a href="https://blog.apaonline.org/2019/09/03/graduatestudentsdiversityinclusivity/" target="_blank">Graduate Students on
         Diversity and Inclusivity in Philosophy</a></li>
       <li><a href="https://cdn.ymaws.com/www.apaonline.org/resource/resmgr/data_on_profession/apda_final_report_2019.pdf" target="_blank">The
@@ -64,8 +64,7 @@ const IndexPage = () => (
       <li><a href="https://historyofwomenphilosophers.org/project/directory-of-women-philosophers/" target="_blank">Directory of Women
         Philosophers</a></li>
       <li><a
-        href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhcGFjb21taXR0ZWVvbnRoZXN0YXR1c29md29tZW58Z3g6NThlNmFiNTZjMTc5ZDE0Mw" target="_blank">Survey
-        of Earned Doctorates %Women - Haslanger</a></li>
+        href="https://eujap.uniri.hr/volume-19-no-1-2023-special-issue-on-women-in-philosophy-past-present-and-future/" target="_blank">Open access special Issue Women in Philosophy: Past, Present and Future</a></li>
       <li><a href="https://doi.org/10.7910/DVN/IJZW8Y" target="_blank">Women’s Representation in U.S. Philosophy Graduate Programs</a>
       </li>
       <li><a href="https://web.csulb.edu/~jvancamp/doctoral_2004.html" target="_blank">Tenured/tenure-track faculty women at 98 U.S.
@@ -79,11 +78,11 @@ const IndexPage = () => (
         Women at APA Meetings, 1955, 1975, 1995, 2015.</a></li>
       <li><a href="https://aap.org.au/Resources/Documents/publications/IPWPP/IPWPP_ExecutiveSummary.pdf" target="_blank">Improving the
         Participation of Women in the Philosophy Profession; Executive Summary.</a></li>
-      <li><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1527-2001.2012.01306.x/full" target="_blank">Quantifying the Gender Gap:
-        An Empirical Study of the Under-Representation of Women in Philosophy</a></li>
+      {/* <li><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1527-2001.2012.01306.x/full" target="_blank">Quantifying the Gender Gap:
+        An Empirical Study of the Under-Representation of Women in Philosophy</a></li> */}
       <li><a href="http://www.newappsblog.com/" target="_blank">Academic Placement Data and Analysis: 2015 Final Report.</a></li>
-      <li><a href="https://goo.gl/QsuuTL" target="_blank">Program Review Report [Gender Composition], 2004-2011 - Executive Committee</a>
-      </li>
+      {/* <li><a href="https://goo.gl/QsuuTL" target="_blank">Program Review Report [Gender Composition], 2004-2011 - Executive Committee</a>
+      </li> */}
       <li><a href="https://doi.org/10.1111/j.1467-9833.2012.01567.x" target="_blank">Different Voices or Perfect Storm: Why Are There So
         Few Women in Philosophy? - Antony - 2012</a></li>
       <li><a
@@ -127,13 +126,13 @@ const IndexPage = () => (
         Introduction, Philosophical Papers,</a></li>
     </ul>
     <h1>Mentoring</h1>
-    <ul>
-      <li><a href="https://philosophy.ku.edu/documents" target="_blank">The Mentoring Project for Pre-tenure Women Faculty in
+    {/* <ul> */}
+      {/* <li><a href="https://philosophy.ku.edu/documents" target="_blank">The Mentoring Project for Pre-tenure Women Faculty in
         Philosophy.</a></li>
-      <li><a href="http://www.piksi.org/" target="_blank">Philosophy in an Inclusive Key Summer Institute (PIKSI).</a></li>
+      <li><a href="http://www.piksi.org/" target="_blank">Philosophy in an Inclusive Key Summer Institute (PIKSI).</a></li> */}
       <li><a href="http://spwp.ucsd.edu/" target="_blank">The UCSD Summer Program for Women in Philosophy (UCSD SPWP).</a></li>
-    </ul>
-    <h1>Implicit Bias & Stereotype Threat</h1>
+    {/* </ul> */}
+    {/* <h1>Implicit Bias & Stereotype Threat</h1>
     <ul>
       <li><a href="http://biasproject.org/" target="_blank">Implicit Bias & Philosophy International Research Project.</a></li>
       <li><a href="https://www.youtube.com/watch?v%3DFM6mbSiD3eA" target="_blank">Cultures of Brilliance and Academic Gender Gaps -
@@ -144,7 +143,7 @@ const IndexPage = () => (
       <li><a
         href="http://www.philosophy.rutgers.edu/graduate-program/climate/133-graduate/climate/530-climate-for-women-stereotype-threat" target="_blank">Stereotype
         Threat</a></li>
-    </ul>
+    </ul> */}
     <h1>Pedagogy</h1>
     <ul>
       <li><a href="http://phildiversity.weebly.com/" target="_blank">Best practices for the Inclusive Philosophy Classroom</a></li>
