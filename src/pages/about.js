@@ -104,7 +104,7 @@ export default function About() {
       </Member>
       <Member
         name="Helen Beebee"
-        photo={profileImage.Beebee}
+        photo={profileImage.HelenBeebee}
         position=""
         className="advisor"
       >
@@ -112,7 +112,7 @@ export default function About() {
       </Member>
       <Member
         name="Jennifer Saul"
-        photo={profileImage.Saul}
+        photo={profileImage.JenniferSaul}
         position=""
         className="advisor"
       >
