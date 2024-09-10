@@ -108,7 +108,7 @@ export default function About() {
         position=""
         className="advisor"
       >
-        Helen Beebee is a Professor of Philosophy of Science at the University of Leeds, UK. She works mostly in analytic metaphysics but has fingers in other pies; her books include Hume on Causation (Routledge 2006) and, with Michael Rush, Philosophy: Why it Matters (Polity 2019) — a very short introduction to philosophy for a general audience. With Jenny Saul, she set up and manages the British Philosophical Association/Society for Women in Philosophy (UK) Good Practice Scheme and co-authored two reports on the underrepresentation of women in UK philosophy. She was elected as a Fellow of the British Academy in 2023.
+        Helen BeebeeTOMMMM is a Professor of Philosophy of Science at the University of Leeds, UK. She works mostly in analytic metaphysics but has fingers in other pies; her books include Hume on Causation (Routledge 2006) and, with Michael Rush, Philosophy: Why it Matters (Polity 2019) — a very short introduction to philosophy for a general audience. With Jenny Saul, she set up and manages the British Philosophical Association/Society for Women in Philosophy (UK) Good Practice Scheme and co-authored two reports on the underrepresentation of women in UK philosophy. She was elected as a Fellow of the British Academy in 2023.
       </Member>
       <Member
         name="Jennifer Saul"
