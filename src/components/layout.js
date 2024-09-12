@@ -52,7 +52,7 @@ const Layout = ({ active, className, children }) => (
           >
             <Nav>
               <Nav.Link href={withPrefix("/")} className={active === "home" ? "active" : ""}>
-                Home
+                Homeee
               </Nav.Link>
               <Nav.Link
                 href={withPrefix("/practices")}
