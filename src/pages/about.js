@@ -320,11 +320,8 @@ export default function About() {
         <p>
           I'm Professor of Philosophy and a founder and Director of  Faculty and the Institute for Practical Ethics
           at the University of California, San Diego. I’m President-Elect of the Philosophy of Science Association (2023-) and sit on the Freedom and Responsibility in Science Committee of the International Science Council, Paris.
-        </p>
-        <p>
           From 1996-2000 I worked in the Department of Philosophy, Logic & Scientific Method at the London School of Economics. I obtained my Ph.D. from Rutgers University in 1997.
-        </p>
-        <p>
+
           My main area of research and teaching is philosophy of science. My book What Makes Time Special? (Oxford University Press, 2017) won the 2018 Lakatos Award and the 2022 Suppes Prize.
         </p>
       </Member>
@@ -384,9 +381,9 @@ export default function About() {
       >
         <p>
           Virginia Valian is Distinguished Professor of Psychology at Hunter College – CUNY, and is a member of the doctoral faculties of Psychology, Linguistics, and Speech-Language-Hearing Sciences at the CUNY Graduate Center.  Within Psychology, she is a member of three training areas – Cognitive and Comparative Psychology, Developmental, and Basic and Applied Social Psychology.
-        </p><p>
+        
           Valian directs the Language Acquisition Research Center at Hunter College, which studies the acquisition of syntax in young children and the relation between bilingualism and cognition in adults.  She examines children's early multi-word combinations and how they develop via corpus analysis and experiments.
-        </p><p>
+      
           Valian is also co-founder and director of Hunter's Gender Equity Project.  She performs work on the reasons behind women's slow advancement in the professions and proposes remedies for individuals and institutions.  She has written on sexual harassment, recognition, and on how to improve women's progress in the work world in general and academia in particular.
         </p>
       </Member>
