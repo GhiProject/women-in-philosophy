@@ -14,7 +14,7 @@ export default function Member({ className, photo, name, position, children }) {
         </h3>
 
         <div className="about">
-          <p>{children.slice(0,200)}</p>
+          <p>{children.slice(0,300)+"..."}</p>
         </div>
       </div>
     </div>
