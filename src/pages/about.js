@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import Member from "../components/member";
+import MembersWrapper from "../components/MembersWrapper";
 
 const profileImage = {};
 
