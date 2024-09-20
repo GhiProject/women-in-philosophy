@@ -34,58 +34,99 @@ export default function About() {
       <a href="mailto:demphilproj@gmail.com">demphilproj@gmail.com</a>
       <br />
       <br /> */}
+      <MembersWrapper
+        heading={"Directors"}
+        members={[
+          <Member
+            name="Elly Vintiadis"
+            photo={profileImage.vintiadis}
+            // position="(Co-Director)"
+            className="pi"
+          >
+            Elly Vintiadis teaches philosophy at Deree - The American college of
+            Greece. Her work is mainly in the philosophy of mind and of
+            psychiatry but also in epistemology, animal ethics and
+            metaphilosophy. She is editor of Philosophy by Women (Routledge,
+            2020), first editor of Brute Facts (Oxford University Press, 2018)
+            and author of Animals and US (in Greek -EP Books, 2020). She also
+            writes for a wider audience – both because she enjoys it and because
+            she believes it is important that philosophical thinking is
+            available and accessible to the wider public beyond academia.
+          </Member>,
+          <Member
+            name="Eric Schwitzgebel"
+            photo={profileImage.schwitzgebel}
+            // position="(Co-Director)"
+            className="pi"
+          >
+            Eric Schwitzgebel is a Professor of Philosophy at the University of
+            California, Riverside. Recent works include: A Theory of Jerks, and
+            Other Philosophical Misadventures (MIT Press, 2019), Perplexities of
+            Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine,
+            2014), and “1% Skepticism” (Nous, forthcoming). He is a member of
+            the APA Committee on the Status and Future of the Profession. On his
+            blog, and more recently in op-eds for The Los Angeles Times, he
+            regularly critiques the narrowness and homogeneity of academic
+            philosophy in the mainstream Anglophone tradition.
+          </Member>,
+          <Member
+            name="Björn Freter"
+            photo={profileImage.freter}
+            // position="(Co-Director)"
+            className="pi"
+          >
+            Björn lives in Knoxville, TN, USA and works as Lecturer for World
+            Philosophy at the School of Oriental and African Studies (SOAS) at
+            the University of London, UK. He has published on a variety of
+            topics, including pre-Socratic philosophy, baroque and classical
+            German literature as well as African Philosophy, Matters of
+            Decolonization, White Supremacy, Misogyny and Veganism. His current
+            main research project aims at the Desuperiorization of Philosophy,
+            ie. developing a radically anti-oppressive moral philosophy, and at
+            the Foundation of Superaltern Studies, a research area investigating
+            the western superiorist traditions and its self-representation as
+            global moral authority.
+          </Member>,
+          <Member
+            name="Björn Freter"
+            photo={profileImage.freter}
+            // position="(Co-Director)"
+            className="pi"
+          >
+            Björn lives in Knoxville, TN, USA and works as Lecturer for World
+            Philosophy at the School of Oriental and African Studies (SOAS) at
+            the University of London, UK. He has published on a variety of
+            topics, including pre-Socratic philosophy, baroque and classical
+            German literature as well as African Philosophy, Matters of
+            Decolonization, White Supremacy, Misogyny and Veganism. His current
+            main research project aims at the Desuperiorization of Philosophy,
+            ie. developing a radically anti-oppressive moral philosophy, and at
+            the Foundation of Superaltern Studies, a research area investigating
+            the western superiorist traditions and its self-representation as
+            global moral authority.
+          </Member>,
+          <Member
+            name="Björn Freter"
+            photo={profileImage.freter}
+            // position="(Co-Director)"
+            className="pi"
+          >
+            Björn lives in Knoxville, TN, USA and works as Lecturer for World
+            Philosophy at the School of Oriental and African Studies (SOAS) at
+            the University of London, UK. He has published on a variety of
+            topics, including pre-Socratic philosophy, baroque and classical
+            German literature as well as African Philosophy, Matters of
+            Decolonization, White Supremacy, Misogyny and Veganism. His current
+            main research project aims at the Desuperiorization of Philosophy,
+            ie. developing a radically anti-oppressive moral philosophy, and at
+            the Foundation of Superaltern Studies, a research area investigating
+            the western superiorist traditions and its self-representation as
+            global moral authority.
+          </Member>,
+        ]}
+      />
       <h1>Directors</h1>
 
-      <Member
-        name="Elly Vintiadis"
-        photo={profileImage.vintiadis}
-        // position="(Co-Director)"
-        className="pi"
-      >
-        Elly Vintiadis teaches philosophy at Deree - The American college of
-        Greece. Her work is mainly in the philosophy of mind and of psychiatry
-        but also in epistemology, animal ethics and metaphilosophy. She is
-        editor of Philosophy by Women (Routledge, 2020), first editor of Brute
-        Facts (Oxford University Press, 2018) and author of Animals and US (in
-        Greek -EP Books, 2020). She also writes for a wider audience – both
-        because she enjoys it and because she believes it is important that
-        philosophical thinking is available and accessible to the wider public
-        beyond academia.
-      </Member>
-      <Member
-        name="Eric Schwitzgebel"
-        photo={profileImage.schwitzgebel}
-        // position="(Co-Director)"
-        className="pi"
-      >
-        Eric Schwitzgebel is a Professor of Philosophy at the University of
-        California, Riverside. Recent works include: A Theory of Jerks, and
-        Other Philosophical Misadventures (MIT Press, 2019), Perplexities of
-        Consciousness (MIT Press, 2011), “A Theory of Jerks” (Aeon Magazine,
-        2014), and “1% Skepticism” (Nous, forthcoming). He is a member of the
-        APA Committee on the Status and Future of the Profession. On his blog,
-        and more recently in op-eds for The Los Angeles Times, he regularly
-        critiques the narrowness and homogeneity of academic philosophy in the
-        mainstream Anglophone tradition.
-      </Member>
-      <Member
-        name="Björn Freter"
-        photo={profileImage.freter}
-        // position="(Co-Director)"
-        className="pi"
-      >
-        Björn lives in Knoxville, TN, USA and works as Lecturer for World
-        Philosophy at the School of Oriental and African Studies (SOAS) at the
-        University of London, UK. He has published on a variety of topics,
-        including pre-Socratic philosophy, baroque and classical German
-        literature as well as African Philosophy, Matters of Decolonization,
-        White Supremacy, Misogyny and Veganism. His current main research
-        project aims at the Desuperiorization of Philosophy, ie. developing a
-        radically anti-oppressive moral philosophy, and at the Foundation of
-        Superaltern Studies, a research area investigating the western
-        superiorist traditions and its self-representation as global moral
-        authority.
-      </Member>
       {/* <Member
         name="Nicole Hassoun"
         photo={profileImage.Hassoun}
@@ -490,41 +531,38 @@ export default function About() {
         position=""
         className="scientific"
       >
-        <p>
-          Christine Straehle is Professor for Practical Philosophy at the
-          University of Hamburg. Before joining the University of Hamburg, she
-          was Professor of Ethics and Applied Ethics at the University of
-          Ottawa, and Professor of Social Philosophy at UQAM. Since her arrival
-          at the University of Ottawa, she has also been recruited as the
-          inaugural and founding director of the Centre for Philosophy, Politics
-          and Economics in the Faculty of Philosophy at Groningen University in
-          2016, where she also held the Chair in Philosophy and Public Affairs.{" "}
-          <br />
-          Straehle’s work is at the intersection of moral and political
-          philosophy and public policy, which is to say that she examines the
-          moral justifiability of existing public policies and makes normative
-          recommendations on how to design just public policies. Straehle starts
-          from the premise that addressing societal challenges such as labor
-          shortages or the ethical implications of technologies of assisted
-          reproduction benefit from philosophical analysis and reflection, and
-          interdisciplinary collaboration. Results of this work are numerous
-          articles, several edited collections, including The Political
-          Philosophy of Refuge (Cambridge University Press) and Vulnerability,
-          Autonomy and Applied Ethics (Routledge 2017). Her latest work is
-          Debating the Surrogacy (Oxford University Press, forthcoming) and her
-          monograph on Vulnerability, Territory, and Migration (in preparation).
-          Straehle has received prestigious fellowships and prizes in
-          recognition of her work: she has been awarded a DAAD Professorship to
-          spend the academic year 2015 - 2016 in Hamburg, has been a CEPPA
-          fellow at the University of St.Andrews, at the Fondation Brocher in
-          Switzerland, and Justitia Amplificata in Frankfurt, and is an
-          Associate Member of Nuffield College, Oxford.In 2019, Straehle became
-          a member of the College of the Royal Society of Canada, and was
-          awarded the Kitty Newman Prize for Social and Political
-          Philosophy.Since 2021, she has also been a member of the Hamburg
-          Academy of Science.In 2022 - 2023, Straehle will be senior research
-          fellow at the Swedish Collegium for Advanced Studies in Uppsala.
-        </p>
+        Christine Straehle is Professor for Practical Philosophy at the
+        University of Hamburg. Before joining the University of Hamburg, she was
+        Professor of Ethics and Applied Ethics at the University of Ottawa, and
+        Professor of Social Philosophy at UQAM. Since her arrival at the
+        University of Ottawa, she has also been recruited as the inaugural and
+        founding director of the Centre for Philosophy, Politics and Economics
+        in the Faculty of Philosophy at Groningen University in 2016, where she
+        also held the Chair in Philosophy and Public Affairs. <br />
+        Straehle’s work is at the intersection of moral and political philosophy
+        and public policy, which is to say that she examines the moral
+        justifiability of existing public policies and makes normative
+        recommendations on how to design just public policies. Straehle starts
+        from the premise that addressing societal challenges such as labor
+        shortages or the ethical implications of technologies of assisted
+        reproduction benefit from philosophical analysis and reflection, and
+        interdisciplinary collaboration. Results of this work are numerous
+        articles, several edited collections, including The Political Philosophy
+        of Refuge (Cambridge University Press) and Vulnerability, Autonomy and
+        Applied Ethics (Routledge 2017). Her latest work is Debating the
+        Surrogacy (Oxford University Press, forthcoming) and her monograph on
+        Vulnerability, Territory, and Migration (in preparation). Straehle has
+        received prestigious fellowships and prizes in recognition of her work:
+        she has been awarded a DAAD Professorship to spend the academic year
+        2015 - 2016 in Hamburg, has been a CEPPA fellow at the University of
+        St.Andrews, at the Fondation Brocher in Switzerland, and Justitia
+        Amplificata in Frankfurt, and is an Associate Member of Nuffield
+        College, Oxford.In 2019, Straehle became a member of the College of the
+        Royal Society of Canada, and was awarded the Kitty Newman Prize for
+        Social and Political Philosophy.Since 2021, she has also been a member
+        of the Hamburg Academy of Science.In 2022 - 2023, Straehle will be
+        senior research fellow at the Swedish Collegium for Advanced Studies in
+        Uppsala.
       </Member>
       <Member
         name="Anthony Appiah"
@@ -564,19 +602,16 @@ export default function About() {
         position=""
         className="scientific"
       >
-        <p>
-          I'm Professor of Philosophy and a founder and Director of Faculty and
-          the Institute for Practical Ethics at the University of California,
-          San Diego. I’m President-Elect of the Philosophy of Science
-          Association (2023-) and sit on the Freedom and Responsibility in
-          Science Committee of the International Science Council, Paris. From
-          1996-2000 I worked in the Department of Philosophy, Logic & Scientific
-          Method at the London School of Economics. I obtained my Ph.D. from
-          Rutgers University in 1997. My main area of research and teaching is
-          philosophy of science. My book What Makes Time Special? (Oxford
-          University Press, 2017) won the 2018 Lakatos Award and the 2022 Suppes
-          Prize.
-        </p>
+        I'm Professor of Philosophy and a founder and Director of Faculty and
+        the Institute for Practical Ethics at the University of California, San
+        Diego. I’m President-Elect of the Philosophy of Science Association
+        (2023-) and sit on the Freedom and Responsibility in Science Committee
+        of the International Science Council, Paris. From 1996-2000 I worked in
+        the Department of Philosophy, Logic & Scientific Method at the London
+        School of Economics. I obtained my Ph.D. from Rutgers University in
+        1997. My main area of research and teaching is philosophy of science. My
+        book What Makes Time Special? (Oxford University Press, 2017) won the
+        2018 Lakatos Award and the 2022 Suppes Prize.
       </Member>
       <Member
         name="Dan Korman"
@@ -653,24 +688,22 @@ export default function About() {
         position=""
         className="scientific"
       >
-        <p>
-          Virginia Valian is Distinguished Professor of Psychology at Hunter
-          College – CUNY, and is a member of the doctoral faculties of
-          Psychology, Linguistics, and Speech-Language-Hearing Sciences at the
-          CUNY Graduate Center. Within Psychology, she is a member of three
-          training areas – Cognitive and Comparative Psychology, Developmental,
-          and Basic and Applied Social Psychology. Valian directs the Language
-          Acquisition Research Center at Hunter College, which studies the
-          acquisition of syntax in young children and the relation between
-          bilingualism and cognition in adults. She examines children's early
-          multi-word combinations and how they develop via corpus analysis and
-          experiments. Valian is also co-founder and director of Hunter's Gender
-          Equity Project. She performs work on the reasons behind women's slow
-          advancement in the professions and proposes remedies for individuals
-          and institutions. She has written on sexual harassment, recognition,
-          and on how to improve women's progress in the work world in general
-          and academia in particular.
-        </p>
+        Virginia Valian is Distinguished Professor of Psychology at Hunter
+        College – CUNY, and is a member of the doctoral faculties of Psychology,
+        Linguistics, and Speech-Language-Hearing Sciences at the CUNY Graduate
+        Center. Within Psychology, she is a member of three training areas –
+        Cognitive and Comparative Psychology, Developmental, and Basic and
+        Applied Social Psychology. Valian directs the Language Acquisition
+        Research Center at Hunter College, which studies the acquisition of
+        syntax in young children and the relation between bilingualism and
+        cognition in adults. She examines children's early multi-word
+        combinations and how they develop via corpus analysis and experiments.
+        Valian is also co-founder and director of Hunter's Gender Equity
+        Project. She performs work on the reasons behind women's slow
+        advancement in the professions and proposes remedies for individuals and
+        institutions. She has written on sexual harassment, recognition, and on
+        how to improve women's progress in the work world in general and
+        academia in particular.
       </Member>
       <br />
       <br />
