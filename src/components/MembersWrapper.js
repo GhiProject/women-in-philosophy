@@ -8,9 +8,9 @@ export default function MembersWrapper({ heading, members }) {
       <h1 className="heading">{heading}</h1>
       <div className="members">
         {members.map((Member, i) => (
-          <React.Fragment key={i}>
+          <div key={i}>
             <Member />
-          </React.Fragment>
+          </div>
         ))}
       </div>
     </div>
