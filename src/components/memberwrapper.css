@@ -1,10 +1,10 @@
-.member-wrapper {
+.members-wrapper {
 }
 
-.member-wrapper > .heading {
+.members-wrapper > .heading {
 }
 
-.member-wrapper > .members {
+.members-wrapper > .members {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
