@@ -1,60 +1,55 @@
-.member{
-    display: inline-flex;
-    align-content: baseline;
-    color: rgb(0,131,196);
+.member {
+  display: inline-flex;
+  align-content: baseline;
+  color: rgb(0, 131, 196);
 }
-.member .photo{
-    position: relative;
-    top: -75px;
-    width: 125px;
-    height: 125px;
-    margin-bottom: -75px;
-    border: 2px solid #eeeeee;
-    border-radius: 0px !important;
-}
-
-
-.member .box{
-    width: 270px;
-
-    padding: 5px;
-    margin: 100px 20px 20px 20px;
-
-    text-align: center;
-
+.member .photo {
+  position: relative;
+  top: -75px;
+  width: 125px;
+  height: 125px;
+  margin-bottom: -75px;
+  border: 2px solid #eeeeee;
+  border-radius: 0px !important;
 }
 
-.member .pi{
-    border-top-color: #005780;
-    height: 425px;
+.member .box {
+  width: 270px;
+
+  padding: 5px;
+  margin: 100px 20px 20px 20px;
+
+  text-align: center;
 }
 
-
-.member .advisor{
-    border-top-color: #800006 ;
-    height: 280px;
+.member .pi {
+  border-top-color: #005780;
+  height: 395px;
 }
 
-.member .student{
-    border-top-color: #008018 ;
-    height: 340px;
+.member .advisor {
+  border-top-color: #800006;
+  height: 395px;
 }
 
-.member .staff{
-    border-top-color: #ffcb62 ;
-    height: 395px;
+.member .student {
+  border-top-color: #008018;
+  height: 340px;
 }
 
-.member .c{
-    border-top-color: #c862ff;
-    height: 250px;
+.member .staff {
+  border-top-color: #ffcb62;
+  height: 395px;
 }
 
-.member .about{
-    font-size: small;
-    color: #000;
-    /* text-align: left; */
-    text-align: center;
+.member .c {
+  border-top-color: #c862ff;
+  height: 250px;
 }
 
-
+.member .about {
+  font-size: small;
+  color: #000;
+  /* text-align: left; */
+  text-align: center;
+}
