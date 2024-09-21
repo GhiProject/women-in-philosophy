@@ -7,10 +7,8 @@ export default function MembersWrapper({ heading, members }) {
     <div className="members-wrapper">
       <h1 className="heading">{heading}</h1>
       <div className="members">
-        {members.map((Member, i) => (
-          <div key={i}>
-            <Member />
-          </div>
+        {members.map((memberComponent, i) => (
+          <div key={i}>{memberComponent}</div>
         ))}
       </div>
     </div>
